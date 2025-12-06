@@ -7,12 +7,15 @@ UseTab: Always
 ColumnLimit: 80
 
 # Brace style Linux
-BreakBeforeBraces: GNU
+
+BreakBeforeBraces: Attach
 
 # Pointer on the right (Linux kernel style)
+
 PointerAlignment: Right
 
 # No space before parentheses (Linux)
+
 SpaceBeforeParens: Never
 
 AllowShortIfStatementsOnASingleLine: false
