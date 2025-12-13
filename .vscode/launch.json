@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${input:execPath}",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "preLaunchTask": "build"
+        },
+        {
+            "name": "Attach Debug",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${input:execPath}",
+            "processId": "${command:pickProcess}",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "execPath",
+            "type": "promptString",
+            "description": "Path to executable",
+            "default": "${workspaceFolder}/my_app"
+        }
+    ]
+}
